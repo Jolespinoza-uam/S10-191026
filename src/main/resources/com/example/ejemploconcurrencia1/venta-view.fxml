@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejemploconcurrencia1.controller.VentasController">
+   <children>
+      <Label text="Procesamiento Concurrente de Ventas">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <VBox alignment="CENTER_LEFT">
+         <children>
+            <Label text="Vendedor 1" />
+            <ProgressBar fx:id="pgbVendedor1" prefWidth="200.0" progress="0.0" />
+            <Label fx:id="lblVendedor1" text="Esperando..." />
+         </children>
+      </VBox>
+      <VBox>
+         <children>
+            <Label text="Vendedor 2" />
+            <ProgressBar fx:id="pgbVendedor2" prefWidth="200.0" progress="0.0" />
+            <Label fx:id="lblVendedor2" text="Esperando..." />
+         </children>
+      </VBox>
+      <VBox>
+         <children>
+            <Label text="Vendedor 3" />
+            <ProgressBar fx:id="pgbVendedor3" prefWidth="200.0" progress="0.0" />
+            <Label fx:id="lblVendedor3" text="Esperando..." />
+         </children>
+      </VBox>
+      <Separator prefWidth="200.0" />
+      <HBox spacing="20.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Label text="Ventas realizadas:" />
+                  <Label fx:id="lblVentasRealizadas" text="0" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label text="Total recaudado:" />
+                  <Label fx:id="lblTotalRecaudado" text="C$0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <TextArea fx:id="txtVentasProcesadas" prefHeight="200.0" prefWidth="548.0" promptText="Aquí apareceran las ventas procesadas..." />
+      <HBox spacing="15.0">
+         <children>
+            <Button fx:id="btnIniciarVentas" mnemonicParsing="false" text="Iniciar ventas" />
+            <Button fx:id="btnLimpiar" mnemonicParsing="false" text="Limpiar" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="25.0" top="25.0" />
+   </padding>
+</VBox>
