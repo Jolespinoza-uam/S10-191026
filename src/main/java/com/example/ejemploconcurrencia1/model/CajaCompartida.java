@@ -21,4 +21,12 @@ public class CajaCompartida {
     public  synchronized int getTotalRecaudado() {
         return totalRecaudado;
     }
+
+    public void setCantidadVentas(int cantidadVentas) {
+        this.cantidadVentas = cantidadVentas;
+    }
+
+    public void setTotalRecaudado(int totalRecaudado) {
+        this.totalRecaudado = totalRecaudado;
+    }
 }
